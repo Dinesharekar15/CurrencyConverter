@@ -1,0 +1,128 @@
+:root {
+    --blue: #136a8a;
+    --green: #267871;
+    --white: #fff;
+    --exchange-rate-color: #555;
+    --input-background: rgba(119, 136, 153, 0.15);
+    --input-shadow: rgba(119, 136, 153, 0.35);
+    --input-border: #ddd;
+    --shadow-1: rgba(0, 0, 0, 0.25);
+    --shadow-2: rgba(0, 0, 0, 0.15);
+    --loading-bg-1: #c2cfd6;
+    --loading-bg-2: #f0f3f5;
+  }
+
+
+
+*{
+    font-family: poppins,sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--blue);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--blue), var(--green))
+}
+form{
+    position: relative;
+}
+form img {
+    max-width: 2rem;
+}
+.container{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 0 5px var(--shadow-1), 0 5px 10px var(--shadow-2);
+}
+.container h2{
+    text-align: center;
+    
+}
+.amount{
+    margin: 20px 0;
+    
+}
+h4,h5{
+    margin-bottom: 4px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background: var(--input-background);
+    box-shadow:0 0 5px var(--input-shadow);
+    outline: none;
+    font-size: large;
+    color: #000;
+}
+.from{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.from select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background: var(--input-background);
+    outline: none;
+    cursor: pointer;
+}
+button{
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+    
+    right: 50%;
+    width: 100%;
+    background: none;
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+    cursor: pointer;
+    border-radius:50% ;
+}
+.material-symbols-outlined:hover{
+    background:var(--input-background) ;
+}
+.to{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    width: 100%;
+}
+.to select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background: var(--input-background);
+    outline: none;
+    cursor: pointer;
+}
+.exchange-btn{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+}
+.exchange-btn:hover{
+    background: var(--green);
+    transition: all 0.2s ease-in-out;
+}
